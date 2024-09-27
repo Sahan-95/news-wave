@@ -46,6 +46,7 @@ class PermissionHandlingHelper {
       // If granted, navigate to the HomeScreen
       if (Platform.isIOS) {
         await initializeNotifications();
+        Navigator.push(context, createRoute(const HomeScreen()));
       }
       Navigator.push(context, createRoute(const HomeScreen()));
     } else if (status.isDenied || status.isPermanentlyDenied) {
