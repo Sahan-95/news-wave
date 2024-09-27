@@ -4,13 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This application is designed to provide users with the latest news updates in a streamlined and user-friendly manner. Upon first launch, users are prompted to enter their first and last name on a login screen. Afterward, the app requests permission to send notifications. The main news feed presents a list of articles, and users can tap on any item to view the full article in an integrated in-app browser, seamlessly linking to the web.
 
-A few resources to get you started if this is your first Flutter project:
+From a technical perspective, the app follows Clean Architecture principles, separating the presentation, business logic, and data layers for better maintainability and scalability. Dependency injection is utilized to manage object creation in a centralized manner, enhancing modularity and testability. Shared Preferences are employed to store user data locally, so after the initial login, users are not required to enter their details again, enhancing the overall user experience by offering a persistent login state.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+By leveraging local storage, the app significantly improves convenience and ensures a smoother user journey, making it more intuitive and efficient for returning users.
